@@ -1,0 +1,12 @@
+﻿version: '3.4'
+
+services:
+  database:
+    image: postgres
+    container_name: autoencontre_api
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=autoencontre
+      - POSTGRES_PASSWORD=autoencontre
+      - POSTGRES_DB=autoencontre
